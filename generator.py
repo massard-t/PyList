@@ -13,7 +13,7 @@ def print_an_integer(n=None):
         n = 3
     for i in range(n):
         print("A random number ({}): {}".format(i, next(get_an_integer())))
-    pass
+
 
 if __name__ == '__main__':
     print_an_integer(10)
