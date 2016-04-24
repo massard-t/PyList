@@ -11,9 +11,9 @@ def get_an_integer():
 def print_an_integer(n=None):
     if n is None:
         n = 3
-    for _ in range(n):
-        print("A random number: {}".format(next(get_an_integer())))
+    for i in range(n):
+        print("A random number ({}): {}".format(i, next(get_an_integer())))
     pass
 
 if __name__ == '__main__':
-    print_an_integer()
+    print_an_integer(10)
