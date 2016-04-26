@@ -5,7 +5,7 @@ Cheat-sheet like Python repository
 # scrapping
 
 Basic scappers using the Scrapy module
-Scrapy: http://scrapy.org/
+<br>Scrapy: http://scrapy.org/
 
 # generator
 
