@@ -1,7 +1,6 @@
 import scrapy
 
 
-<<<<<<< HEAD
 class basic_scrapping(scrapy.Spider):
     """Spider looking for languages-related content"""
     name = "basic_scrapping"
