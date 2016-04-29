@@ -12,3 +12,10 @@ class BasicScrappingItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+class LanguageItem(scrapy.Item):
+	"""Basic Scrapy Item to find informations about languages"""
+	title = scrapy.Field()
+	link = scrapy.Field()
+	language = scrapy.Field()
+	desc = scrapy.Field()
