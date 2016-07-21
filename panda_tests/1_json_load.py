@@ -1,11 +1,13 @@
 # coding: utf-8
 import json
-with open("09ff.json", 'r') as f:
-    newj = f.read()
-    
-newj
-j = json.loads(newj)
-j
-j["hits"]
-j["hits"]["hists"]
-j["hits"]["hits"]
+
+
+def main():
+    with open("09ff.json", 'r') as f:
+        f_content = f.read()
+    content_json = json.loads(f_content)
+    return content_json
+
+
+if __name__ == '__main__':
+    main()
