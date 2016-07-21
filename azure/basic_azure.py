@@ -1,7 +1,5 @@
 # coding: utf-8
 import os
-import azure
-import azure.storage
 import azure.storage.blob
 from azure.storage.blob import PublicAccess
 from azure.storage.blob import ContentSettings
