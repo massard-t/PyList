@@ -2,28 +2,14 @@
 import pandas as pd
 
 
-data = pd.read_csv(csv_name)
-newdata = data["http:" in data['pictures']]
-newdata = data[data['pictures'].str.contains("http:")]
-data['pictures']
-data['pictures']
-content_http = data.query('"http:" in pictures')
-content_http
-data['pictures']
-data[data['pictures'].str.contains("http:")]
-data.dropna
-data.dropna()
-data[data['pictures'].str.contains("http:")]
-data['pictures']
-data_no_na = data.dropna()
-data_no_na
-data_no_na['pictures']
-data_no_na[data_no_na['pictures'].str.contains('http:')]
-only_http = data_no_na[data_no_na['pictures'].str.contains('http:')]
-only_http
-only_http.to_csv("processed_file_only_http.csv", index=False)
-http_sources = only_http.source.unique()
-http_sources
-with open("sources_http.txt", 'w') as f:
-    f.write('\n'.join(list(http_sources)))
+def filter_by_content(csv_name, columm_name, text_to_find, csv_dest):
+    data = pd.read_csv(csv_name)
+    newdata = data[text_to_find in data[column_name]]
+    newdata = data[data[column_name].str.contains("http:")]
+    content_http = data.query('"http:" in pictures')
+    only_http = data_no_na[data_no_na[column_name].str.contains('http:')]
+    only_http.to_csv("processed_file_only_http.csv", index=False)
+    http_sources = only_http.source.unique()
+    with open("sources_http.txt", 'w') as f:
+        f.write('\n'.join(list(http_sources)))
     
