@@ -13,3 +13,11 @@ def get_every_url_in_set(redis_queue, key):
     except Exception:
         return False
     return res
+
+def main():
+    red = redis.StrictRedis()
+    urls = get_every_url_in_set(red, key)
+
+
+if __name__ == '__main__':
+    main()
