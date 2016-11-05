@@ -1,0 +1,9 @@
+mode:
+  meta:
+    exclusive
+  args:
+    ["ip", "name"]
+input_file:
+  meta:
+  default:
+    input_file.file

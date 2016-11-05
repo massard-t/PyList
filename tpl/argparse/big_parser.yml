@@ -1,0 +1,14 @@
+test:
+  meta:
+  te:
+   ['1', '2', "3", "200"]
+ex:
+  meta:
+    exclusive
+  args:
+    [1, 2, 3, 4, 5, 6]
+test:
+  meta:
+    exclusive
+  args:
+    ['e', 'asdasd', 'xxxx']
